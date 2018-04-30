@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AdminLogin">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/celluloid" />
+    <TextView
+        android:id="@+id/appGreetings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="Welcome to Celluloid"
+        android:textAlignment="center"
+        android:textColor="#021b02"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/adminUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appGreetings"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:hint="Admin Username"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/adminPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminUsername"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:inputType="textPassword"
+        android:hint="Admin Password"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#b62403"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="loginAdmin"
+        tools:ignore="OnClick" />
+    <TextView
+        android:id="@+id/textOR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="Or"
+        android:textAlignment="center"
+        android:textColor="#130739"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textOR"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="monospace"
+        android:onClick="registerAdmin"
+        android:text="Register"
+        android:textColor="#b62403"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+    <TextView
+        android:id="@+id/smaakINC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:fontFamily="serif-monospace"
+        android:text="©2018 SMAAK Inc."
+        android:textColor="#252426"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</LinearLayout>

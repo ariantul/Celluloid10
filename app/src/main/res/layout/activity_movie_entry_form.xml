@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieEntryForm">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_centerInParent="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/entryForm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:text="Entry Form"
+                        android:fontFamily="monospace"
+                        android:textColor="#021b02"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:padding="5sp"/>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="Title:"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+                        <EditText
+                            android:id="@+id/movieTitleET"
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:layout_marginTop="1dp"
+                            android:hint="movie name"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="Director:"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/movieDirectorET"
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:layout_marginTop="1dp"
+                            android:hint="movie director"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="Genre:"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/movieCategoryET"
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:layout_marginTop="1dp"
+                            android:hint="movie category"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="Language:"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/movieLanguageET"
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:layout_marginTop="1dp"
+                            android:hint="movie language"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="Country:"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/movieCountryET"
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:layout_marginTop="1dp"
+                            android:hint="movie country"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="Actor:"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/movieActorET"
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:layout_marginTop="1dp"
+                            android:hint="movie actor"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="Actress:"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/movieActressET"
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:layout_marginTop="1dp"
+                            android:hint="movie actress"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="Duration:"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/movieDurationET"
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:layout_marginTop="1dp"
+                            android:hint="movie duration"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="Release Date:"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/movieReleaseDateET"
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:layout_marginTop="1dp"
+                            android:hint="movie release date"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="Producer:"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/movieProducerET"
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:layout_marginTop="1dp"
+                            android:hint="movie producer"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textSize="13sp" />
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/movieType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Type"
+                        android:fontFamily="monospace"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#021b02"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5sp"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/fullLength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Full Length"
+                            android:textSize="12sp"
+                            android:fontFamily="monospace"
+                            android:textStyle="bold"
+                            android:textColor="#400548"
+                            android:checked="true"/>
+                        <RadioButton
+                            android:id="@+id/docuMentary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Documentary"
+                            android:textSize="12sp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textStyle="bold"/>
+                        <RadioButton
+                            android:id="@+id/shortFilm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Short Film"
+                            android:textSize="12sp"
+                            android:fontFamily="monospace"
+                            android:textColor="#400548"
+                            android:textStyle="bold"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:fontFamily="monospace"
+                    android:onClick="CreateItem"
+                    android:text="Create"
+                    android:textColor="#b62403"
+                    android:layout_gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="OnClick"/>
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:fontFamily="monospace"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:onClick="CancelAction"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="Cancel"
+                    android:textColor="#b62403"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

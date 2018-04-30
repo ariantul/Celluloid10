@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetails">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/detailsInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text="Details Info"
+                android:fontFamily="monospace"
+                android:textColor="#021b02"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:padding="5sp"/>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Title:"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/movieTitleTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="1dp"
+                    android:hint="movie name"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Director:"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/movieDirectorTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="1dp"
+                    android:hint="movie director"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Genre:"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/movieCategoryTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="1dp"
+                    android:hint="movie category"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Language:"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/movieLanguageTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="1dp"
+                    android:hint="movie language"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Country:"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/movieCountryTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="1dp"
+                    android:hint="movie country"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Actor:"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/movieActorTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="1dp"
+                    android:hint="movie actor"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Actress:"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/movieActressTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="1dp"
+                    android:hint="movie actress"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Duration:"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/movieDurationTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:layout_marginTop="1dp"
+                    android:hint="movie duration"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Release Date:"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/movieReleaseDateTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="1dp"
+                    android:hint="movie release date"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Producer:"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/movieProducerTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="1dp"
+                    android:hint="movie producer"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textSize="15sp" />
+            </TableRow>
+        </TableLayout>
+
+            <TextView
+                android:id="@+id/movieType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:padding="5sp"
+                android:text="Type"
+                android:textColor="#021b02"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/fullLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Length"
+                    android:textSize="14sp"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:textColor="#400548"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/docuMentary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Documentary"
+                    android:textSize="14sp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/shortFilm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Short Film"
+                    android:textSize="14sp"
+                    android:fontFamily="monospace"
+                    android:textColor="#400548"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:fontFamily="monospace"
+                    android:onClick="EditItem"
+                    android:text="Edit"
+                    android:gravity="center"
+                    android:textColor="#b62403"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="OnClick"/>
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:fontFamily="monospace"
+                    android:onClick="DeleteItem"
+                    android:layout_marginRight="10dp"
+                    android:text="Delete"
+                    android:gravity="center"
+                    android:textColor="#b62403"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="OnClick"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
